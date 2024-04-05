@@ -179,7 +179,7 @@ function Category() {
                             <div></div>
                             <p>Categories</p>
                         </div>
-                        <h2>Browse By Category</h2>
+                        <h2 data-cursor-text="Categories">Browse By Category</h2>
                     </div>
                     <div  className="categories-section__categories">
                         {cards}

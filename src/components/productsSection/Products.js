@@ -79,14 +79,14 @@ function Products() {
         <div key={el.id} data-aos="flip-left" data-aos-anchor-placement="bottom-bottom" className="products-section__products__card">
             <div className="products-section__products__card--img">
                 <div>
-                    <img src={el.image} alt=""/>
+                    <img data-cursor-text="Tap!" src={el.image} alt=""/>
                     <div className='addCart'>Add to cart</div>
                 </div>
                 <img className="wish-btn" src={categoryHeart} alt=""/>
                 <img className='eye-btn' src={categoryEye} alt=""/>
                 <p>NEW</p>
             </div>
-            <h3>{el.title}</h3>
+            <h3 >{el.title}</h3>
             <div className="products-section__products__card--rating">
                 <p>${el.price}</p>
                 <svg width="100" height="20" viewBox="0 0 100 20" fill="none"
@@ -129,10 +129,10 @@ function Products() {
                     <div className="products-section__title">
                         <div className="products-section__title--porducts">
                             <div></div>
-                            <p>Our Products</p>
+                            <p >Our Products</p>
                         </div>
                         <div className="products-section__title--heading">
-                            <h2>Explore Our Products</h2>
+                            <h2 data-cursor-text="Products">Explore Our Products</h2>
                         </div>
                     </div>
                     <OwlCarousel className='owl-theme' {...options}>
@@ -144,8 +144,8 @@ function Products() {
                         </div>
                     </OwlCarousel>
                     </div>
-                    <div className="products-section__see-all">
-                        <button className="view-btn">View All Products</button>
+                    <div  className="products-section__see-all">
+                        <button data-cursor="-hidden" className="view-btn">View All Products</button>
                     </div>
                 </div>
             </div>
